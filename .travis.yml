@@ -3,4 +3,4 @@ solution: TestTravis.sln
 install:
 - travis_retry nuget restore TestTravis.sln
 sript:
-- mono ./Fibonacci/packages/xunit.runner.console*/tools/xunit.console.exe ./Functions.Tests/bin/Debug/Functions.Tests.dll
+- mono /packages/xunit.runner.console*/tools/xunit.console.exe ./Functions.Tests/bin/Debug/Functions.Tests.dll
