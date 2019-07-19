@@ -1,6 +1,12 @@
 language: csharp
+
 solution: TestTravis.sln
+
+mono:
+- latest
+
 install:
 - travis_retry nuget restore TestTravis.sln
+
 sript:
 - mono /packages/xunit.runner.console*/tools/xunit.console.exe ./Functions.Tests/bin/Debug/Functions.Tests.dll
